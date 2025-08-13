@@ -28,3 +28,17 @@ function getSmallestName(arr) {
 }
 
 console.log(getSmallestName(friends));
+
+// Task 3 Solution
+
+const laptop = 35000;
+const tablet = 15000;
+const Mobile = 20000;
+
+function calculateElectronicsBudget(laptopQty, tabletQty, mobileQty) {
+  const totalMoneyRequired =
+    laptop * laptopQty + tablet * tabletQty + Mobile * mobileQty;
+  return totalMoneyRequired;
+}
+
+console.log(calculateElectronicsBudget(2, 1, 3));
