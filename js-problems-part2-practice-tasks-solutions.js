@@ -42,3 +42,26 @@ function calculateElectronicsBudget(laptopQty, tabletQty, mobileQty) {
 }
 
 console.log(calculateElectronicsBudget(2, 1, 3));
+
+// Task 4 Solution
+
+const phones = [
+            { model: "PhoneA", brand: "Iphone", price: 95000 },
+            { model: "PhoneB", brand: "Samsung", price: 40000 },
+            { model: "PhoneC", brand: "Oppo", price: 26000 },
+            { model: "PhoneD", brand: "Nokia", price: 35000 },
+            { model: "PhoneE", brand: "Iphone", price: 105000 },
+            { model: "PhoneF", brand: "HTC", price: 48000 },
+        ];
+
+function findAveragePhonePrice (arr){
+  let totalPrice = 0;
+  
+  for (let phone of arr){
+  totalPrice = totalPrice + phone.price;
+  }
+  const averagePrice = Number((totalPrice / arr.length).toFixed(2));
+  return averagePrice;
+}
+
+console.log(findAveragePhonePrice (phones))
